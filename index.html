@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!----------- Bootstrap CSS ----------->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!----------- Personalised style sheet ----------->
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+<!----------- Font Awsome----------->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+<title>Mark Dyson - Software Developer</title>
+</head>
+
+
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+     <!----------- Heading ----------->
+     <div class="banner-image">
+         <div class="banner-text">
+             <h1>Mark Dyson</h1>
+             <br>
+             <h2>Software Developer</h2>
+         </div>
+     </div>
+
+     <!----------- End of heading ----------->
+     <!----------- Navbar ----------->
+     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#120775;">
+         <a class="navbar-brand" href="index.html">MARK DYSON</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="nav navbar-nav ml-auto">
+                 <li class="nav-item active">
+                     <a class="nav-link" href="index.html"> <i class="fas fa-home"></i>&nbsp; HOME</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="blog.html"> <i class="fab fa-blogger-b"></i>&nbsp;BLOG</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="resume.html"> <i class="fas fa-file"></i>&nbsp; RESUME</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="portfolio.html"> <i class="fas fa-briefcase"></i>&nbsp; PORTFOLIO</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="tech-stack.html"><i class="fas fa-microchip"></i>&nbsp; TECH STACK</a>
+                 </li>
+             </ul>
+     </nav>
+     <!----------- end of navbar ----------->
+
+     <!----------- Page Content ----------->
+
+     <div id="welcome-text">
+
+         <h1>Welcome</h1>
+
+
+         <h4>This site is intended to showcase my skills as a Software Developer. </h4>
+
+         <h4>I am in the process of making a career change from being a HGV lorry driver to becoming a full-time
+             software
+             developer. <br> On my blog page you will be able to follow my story.</h4>
+
+         <h4>Please take the time to look around.</h4>
+
+     </div>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
